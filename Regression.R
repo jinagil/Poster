@@ -49,7 +49,7 @@ g_gdp <- gdpdata[gdpdata$unique %not in%  cp$unique[1:5],]
 #low or middle (or, less or equal to 40) democracy stock score.
 gdp_n1 <- subset(g_gdp, dem_stock <= 40)
 
-#Subset 2: drop all the observations with missing regime type (~2008, Kenneth Greene (2005))
+#Subset 2: drop all the observations with missing regime type (~2008, Kenneth Greene (2009))
 gdp_n <- subset(gdp_n1, complete.cases(gdp_n1$regime_f))
 table(gdp_n$regime_f)
 table(gdp_n$dem_f)
