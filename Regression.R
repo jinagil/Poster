@@ -76,7 +76,7 @@ residFitted(f2)
 vif(f2)
 summary(f2)
 
-#significance
+#Significance
 Anova(f2, type="III")
 
 #Graph
