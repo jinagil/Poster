@@ -7,9 +7,7 @@ log using "gdpdatalog", replace
 
 *** Delete duplicates (-999)
 drop if country == "Hong Kong"
-
 drop if country == "Macao"
-
 drop if country == "New Caledonia"
 
 *** Lagging data
@@ -42,7 +40,6 @@ xtset ccode_gled year
 
 encode regimetype, gen(regimetype_enc)
 encode country, gen(country_enc)
-
 
 *** Distributions
 twoway scatter dem_stock country_enc if regimetype=="authoritarian"
